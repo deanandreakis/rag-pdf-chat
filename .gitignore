@@ -1,0 +1,63 @@
+# .gitignore for rag-pdf-chat
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+venv.bak/
+.Python
+
+# IDEs / editors
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+Thumbs.db
+
+# Testing / coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+.hypothesis/
+
+# Formatter / linter caches
+.mypy_cache/
+.ruff_cache/
+
+# Build / packaging
+build/
+dist/
+pip-wheel-metadata/
+*.egg-info/
+
+# Project-specific artifacts: FAISS indices, metadata, OCR cache
+rag_books/
+index.faiss
+*.faiss
+meta.jsonl
+run_settings.json
+settings.json
+rag_index/
+rag_books/*.faiss
+rag_books/meta.jsonl
+rag_books/run_settings.json
+.ocr_cache/
+ocr_cache/
+
+# Logs / temp
+*.log
+*.tmp
+*.bak
+
+# macOS
+.DS_Store
